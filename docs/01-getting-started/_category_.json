@@ -1,0 +1,8 @@
+{
+  "label": "はじめての方へ",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "slug": "/getting-started"
+  }
+}

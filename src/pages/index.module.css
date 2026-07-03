@@ -1,0 +1,162 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* 🛠️ 検索窓エリア全体の調整 */
+.centerSearch {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* 📄 白い入力欄の共通デザイン */
+.centerSearch :global(.navbar__search-input) {
+  height: 48px;
+  font-size: 1.2rem;
+  border-radius: 24px;
+  padding-left: 1.5rem;
+  padding-right: 3.5rem; /* Ctrl+K用の隙間 */
+  border: 2px solid #ddd;
+}
+
+/* クリックした時に枠線を黄色に光らせる演出 */
+.centerSearch :global(.navbar__search-input:focus) {
+  outline: none;
+  border-color: #feec7a; 
+}
+
+/* 💡 【お守り】万が一、途中の知らないラッパー要素が邪魔して画面を切り落とさないようにする */
+.centerSearch * {
+  overflow: visible !important;
+}
+
+/* ===================================================
+   🔥 【核心】システム側のサイズ変更を完全に無効化する固定設定
+   =================================================== */
+
+/* 💻 パソコン表示のとき：通常時もクリック時も「500px」にガチガチに固定 */
+.centerSearch :global(.navbar__search),
+.centerSearch :global(.navbar__search-input),
+.centerSearch :global(.navbar__search-input:focus) {
+  width: 500px !important;
+  transition: none !important; /* 縮もうとするアニメーション自体を消滅させる */
+}
+
+/* 📱 スマホ表示のとき（画面の横幅が560px以下のとき）：「画面幅の90%」に強制固定 */
+@media (max-width: 560px) {
+  .centerSearch :global(.navbar__search),
+  .centerSearch :global(.navbar__search-input),
+  .centerSearch :global(.navbar__search-input:focus) {
+    width: 90vw !important; /* 画面幅の90% */
+    transition: none !important;
+  }
+}
+
+
+/* 🛠️ 【変更】タイルを「3列」で並べるグリッド（最大幅も少し広げました） */
+.tileGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 👈 2から3に変更 */
+  gap: 1.5rem;
+  max-width: 1100px;                    /* 👈 900から1100に拡大 */
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* タイル1枚ずつのデザイン */
+.tileCard {
+  /* 💡 ベースの黄色を rgb(255, 230, 75) にし、透明度を 0.3（30%）に引き上げました */
+  background-color: rgba(255, 230, 75, 0.3); 
+  
+  /* 枠線も少し濃くして、カードの輪郭をくっきりさせています */
+  border: 1px solid rgba(255, 230, 75, 0.6); 
+  
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  text-decoration: none !important;
+  color: #1a1a1a !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+  transition: all 0.2s ease;
+}
+
+/* マウスを乗せた（ホバーした）ときの演出（さらに濃く55%） */
+.tileCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 20px rgba(255, 230, 75, 0.25);
+  
+  /* 💡 マウスが乗ったときは、透明度を 0.55（55%）にして「お、選択してるな」とハッキリわかる濃さに */
+  background-color: rgba(255, 230, 75, 0.55); 
+  border-color: rgba(255, 200, 0, 0.8); /* 枠線もゴールドっぽい締まった色に */
+}
+
+.tileIcon {
+  font-size: 2.5rem;                    /* 💡 ほんの少しコンパクトに */
+  margin-bottom: 0.8rem;
+}
+
+.tileCard h3 {
+  font-size: 1.3rem;                    /* 💡 ほんの少しコンパクトに */
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.tileCard p {
+  color: #666;
+  font-size: 0.88rem;                   /* 💡 文字が溢れないよう微調整 */
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* スマホやタブレットで見たら縦列を調整する設定 */
+@media (max-width: 996px) {
+  .tileGrid {
+    grid-template-columns: repeat(2, 1fr); /* タブレットでは2列 */
+  }
+}
+
+@media (max-width: 768px) {
+  .tileGrid {
+    grid-template-columns: 1fr;            /* スマホでは1列 */
+  }
+}
+
+/* 🛠️ ダークモードの時だけ、タイルの文字色を読みやすく上書きする設定 */
+
+[data-theme='dark'] .tileCard {
+  /* タイルの見出しや全体の文字色を「白」にしてクッキリさせます */
+  color: #ffffff !important; 
+}
+
+[data-theme='dark'] .tileCard p {
+  /* タイルの中の説明文（細かい文字）を「明るい薄グレー」にして馴染ませます */
+  color: #e3e8ee !important; 
+}
+
+/* マウスを乗せた（ホバーした）ときも白文字をキープ */
+[data-theme='dark'] .tileCard:hover {
+  color: #ffffff !important;
+}
