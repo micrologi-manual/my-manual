@@ -4,7 +4,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'microLogi users guide', // 💡 サイトのメインタイトル
+  title: 'microLogi WMS guide', // 💡 サイトのメインタイトル
   tagline: 'システムの操作方法を解説するポータルサイトです',
   favicon: 'img/favicon.ico',
 
