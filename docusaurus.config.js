@@ -66,7 +66,7 @@ const config = {
 
       // 🛠️ 【変更点3】上のナビゲーションバーをマニュアル用にシンプル化
       navbar: {
-        title: 'microLogi Users Guide', // ナビバーの左上の文字
+        title: 'WMS Quick Start Guide', // ナビバーの左上の文字
         /*
         logo: {
           alt: 'Logo',
@@ -77,7 +77,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'マニュアルを開く', // 「Tutorial」から日本語に変更
+            label: 'ガイドを開く', // 「Tutorial」から日本語に変更
           },
           // 💡 不要な「Blog」や「GitHub」へのリンクを削除してスッキリさせました
         ],
