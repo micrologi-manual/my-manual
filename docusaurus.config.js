@@ -1,15 +1,15 @@
 // @ts-check
 // `@type` JSDoc annotations allow editor autocompletion and type checking
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'microLogi WMS guide', // 💡 サイトのメインタイトル
+  title: 'WMS Quick Start Guide', // 💡 サイトのメインタイトル
   tagline: 'システムの操作方法を解説するポータルサイトです',
   favicon: 'img/favicon.ico',
 
   future: {
-    v4: true, 
+    v4: true,
   },
 
   // 💡 後ほどGitHub Pagesに公開する際、ここを自社のURLに書き換える
@@ -17,8 +17,8 @@ const config = {
   baseUrl: '/',
 
   // 💡 後ほどGitHubの設定に合わせて書き換えます
-  organizationName: 'your-github-org', 
-  projectName: 'your-repo-name', 
+  organizationName: 'your-github-org',
+  projectName: 'your-repo-name',
 
   onBrokenLinks: 'throw',
 
@@ -37,7 +37,7 @@ const config = {
           sidebarPath: './sidebars.js',
         },
         // 💡 マニュアルサイトでは基本的にブログは使わないため、設定を無効化（削除）
-        blog: false, 
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -48,10 +48,9 @@ const config = {
   // 🛠️ 【変更点2】ここに日本語対応の「ローカル検索プラグイン」を合体！
   themes: [
     [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
+      require.resolve('@easyops-cn/docusaurus-search-local'),
       {
-        
-        language: ["en", "ja"], // 👈 英語と日本語の両方で検索できるように設定
+        language: ['en', 'ja'], // 👈 英語と日本語の両方で検索できるように設定
         indexPages: true,
       },
     ],
@@ -64,7 +63,7 @@ const config = {
       colorMode: {
         respectPrefersColorScheme: true, // ユーザーのPC設定（ダークモード等）に合わせる
       },
-      
+
       // 🛠️ 【変更点3】上のナビゲーションバーをマニュアル用にシンプル化
       navbar: {
         title: 'microLogi Users Guide', // ナビバーの左上の文字
