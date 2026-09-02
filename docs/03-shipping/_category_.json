@@ -1,8 +1,8 @@
 {
-  "label": "自動化",
+  "label": "出荷",
   "position": 3,
   "link": {
     "type": "generated-index",
-    "slug": "/automation"
+    "slug": "/shipping"
   }
 }

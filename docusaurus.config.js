@@ -97,7 +97,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} microLogiマニュアル. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} microLogi.`,
       },
       prism: {
         theme: prismThemes.github,

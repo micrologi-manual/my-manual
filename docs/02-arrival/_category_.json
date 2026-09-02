@@ -1,8 +1,8 @@
 {
-  "label": "機能",
+  "label": "入荷",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "slug": "/features"
+    "slug": "/arrival"
   }
 }

@@ -1,8 +1,8 @@
 {
-  "label": "運用",
+  "label": "在庫",
   "position": 4,
   "link": {
     "type": "generated-index",
-    "slug": "/operations"
+    "slug": "/inventory"
   }
 }
