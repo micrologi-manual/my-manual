@@ -1,0 +1,31 @@
+.box{
+    padding: 10px;
+    background-color: #a9a9a9;
+    color:#000000;
+}
+
+.green{color:green;}
+
+.red{color:red;}
+
+.blue{color:blue;}
+
+.orange{color:orange;}
+
+.ybox{
+    padding: 10px;
+    background-color: #fff2cc;
+    color:#000000;
+}
+
+.gbox{
+    padding: 10px;
+    background-color: #d9ead3;
+    color:#000000
+}
+
+.wbox{
+    padding: 10px;
+    background-color: #FFFFFF;
+    color:#000000;
+}
