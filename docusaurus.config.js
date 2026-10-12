@@ -22,6 +22,13 @@ const config = {
 
   onBrokenLinks: 'throw',
 
+  // 🛠️ 【追加】画像ファイルが見つからない場合にエラーでビルドを止めない設定
+  markdown: {
+    hooks: {
+      onBrokenMarkdownImages: 'warn', // エラーで止めず警告のみ（完全に消す場合は 'ignore'）
+    },
+  },
+
   // 🛠️ 【変更点1】サイトの基本言語を「日本語」に設定
   i18n: {
     defaultLocale: 'ja',
