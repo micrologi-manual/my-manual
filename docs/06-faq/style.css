@@ -21,7 +21,7 @@
 .gbox{
     padding: 10px;
     background-color: #d9ead3;
-    color:#000000
+    color:#000000;
 }
 
 .wbox{
@@ -29,3 +29,7 @@
     background-color: #FFFFFF;
     color:#000000;
 }
+
+.navy{color:navy}
+
+.lblue{color:#5BACB8;}
