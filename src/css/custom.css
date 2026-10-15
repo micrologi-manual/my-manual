@@ -75,7 +75,7 @@
 
 .blue{
   color:#1a66cc;
-  font-wight: 700;
+  font-weight: 700;
 }
 
 [data-theme='dark'] .blue{
@@ -128,7 +128,7 @@ html[data-theme='dark'] .gbox {
   font-weight: bold;       
 }
 
-html[data-theme='dark'] .wbox {
+html[data-theme='dark'] .wbox{
   background-color: transparent; 
   border: 1px solid #7a7a7a;    
   color: #ffb84d;
