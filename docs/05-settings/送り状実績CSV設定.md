@@ -1,3 +1,7 @@
+---
+sidebar_position: 40
+---
+
 <h1>送り状実績CSV設定</h1>
 
 <div className="box">
