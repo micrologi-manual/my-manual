@@ -66,7 +66,7 @@ sidebar_position: 40
 
 ①　出荷管理＞送り状実績CSV設定
 
-②　複製したい標準レイアウトの［<span className="navy">**編集**</span>］ボタンをクリック
+②　複製したい標準レイアウトの［<span className="blue">**編集**</span>］ボタンをクリック
 
 ③　必要に応じて出力名や出力名を変更し、紐づけ等を変更し［<span className="green">**変更**</span>］ボタンをクリック
 
