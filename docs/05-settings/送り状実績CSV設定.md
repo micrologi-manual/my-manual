@@ -686,7 +686,7 @@ sidebar_position: 40
     <tr style={{ verticalAlign: 'middle' }}>
       <td style={{ textAlign: 'center' }}>「お届け予定eメールe-mailアドレス」</td>
       <td style={{ textAlign: 'center' }}>出荷指示</td>
-      <td>送付先メールアドレスが出力されます。<br /><img src={require('./素材/送り状実績CSV設定48.png').default} alt="Screenshot_5.jpg" width="439" height="56" /></td>
+      <td>送付先メールアドレスが出力されます。<br /><img src={require('./素材/送り状実績CSV設定48.png').default} alt="Screenshot_5.jpg" width="500" height="56" /></td>
     </tr>
     <tr style={{ verticalAlign: 'middle' }}>
       <td style={{ textAlign: 'center' }}>お届け予定eメールメッセージ</td>
