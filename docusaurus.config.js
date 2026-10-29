@@ -6,7 +6,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 const config = {
   title: 'WMS Quick Start Guide', // 💡 サイトのメインタイトル
   tagline: 'microLogi WMSの操作方法を解説するポータルサイトです',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/microLogi.jpg',
 
   future: {
     v4: true,
