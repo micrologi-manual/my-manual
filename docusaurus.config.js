@@ -13,12 +13,13 @@ const config = {
   },
 
   // 💡 後ほどGitHub Pagesに公開する際、ここを自社のURLに書き換える
-  url: 'https://your-docusaurus-site.example.com',
-  baseUrl: '/',
+  url: 'https://micrologi-manual.github.io',
+  baseUrl: '/my-manual/',
 
   // 💡 後ほどGitHubの設定に合わせて書き換えます
-  organizationName: 'your-github-org',
-  projectName: 'your-repo-name',
+  organizationName: 'micrologi-manual',
+  projectName: 'my-manual',
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
 
