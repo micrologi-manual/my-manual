@@ -74,7 +74,7 @@ const config = {
 
       // 🛠️ 【変更点3】上のナビゲーションバーをマニュアル用にシンプル化
       navbar: {
-        title: 'WMS Quick Start Guide', // ナビバーの左上の文字
+        title: 'WMS マニュアル', // ナビバーの左上の文字
         /*
         logo: {
           alt: 'Logo',
