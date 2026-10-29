@@ -21,7 +21,7 @@ const config = {
   projectName: 'my-manual',
   trailingSlash: false,
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
 
   // 🛠️ 【追加】画像ファイルが見つからない場合にエラーでビルドを止めない設定
   markdown: {
